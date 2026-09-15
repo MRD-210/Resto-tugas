@@ -1,0 +1,227 @@
+html {scroll-behavior: smooth;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #948979;
+  color: #222831;
+}
+header {
+  background-color: #222831;
+  color: #DFD0B8;
+  display: grid;
+  place-items: center;
+  height: 70px;
+}
+nav {
+  background-color: #393E46;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+nav a {
+  text-decoration: none;
+  color: #DFD0B8;
+  font-weight: bold;
+  margin: 1px;
+}
+nav a:hover {color: white;}
+nav ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 13px;
+  margin-left: 10px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+#tentang, #menu, #kontak {scroll-margin-top: 68px;}
+main {
+  flex: 3;
+  min-width: 300px;
+}
+.about {
+  background-color: #DFD0B8;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 3px 4px 10px;
+}
+#menu-c {
+  background-color: #DFD0B8;
+  border-radius: 12px;
+  box-shadow: 3px 4px 10px;
+  padding: 10px;
+  width: 100%;
+  height: 370px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.d-menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  height: auto;
+  width: 100%;
+}
+#menu {margin-bottom: 15px;}
+.menu {
+  background-color: #948979;
+  border: 1px solid #f0e6d2;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 3px 3px 4px #d9d0bd;
+  height: auto;
+  padding-bottom: 15px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+.menu:hover {
+  transform: scale(1.05);
+  background-color: #a69a88;
+}
+.menu h3, p {margin: 8px;}
+.menu img {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.menu button {
+  width: 90%;
+  border: none;
+  background-color: #222831;
+  color: #DFD0B8;
+  height: 10%;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.menu button:hover {
+  transform: scale(1.05);
+  background-color: #393E46;
+}
+#tanda {
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  transform: rotate(15deg);
+  width: 55px;
+  height: 55px;
+  background-color: #222831;
+  color: #DFD0B8;
+  padding: 4px 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+aside {
+  flex: 1;
+  min-width: 250px;
+  max-width: 660px;
+  background-color: #DFD0B8;
+  padding: 20px;
+  border-radius: 8px;
+  height: fit-content;
+  margin: auto;
+  box-shadow: 3px 4px 10px;
+  text-align: center;
+}
+aside b {font-size: 18px;}
+aside img {
+  width: 100%;
+  border-radius: 8px;
+  max-width: 300px;
+  transition: transform 0.5s ease;
+}
+aside img:hover {transform: scale(0.7);}
+#kontak {
+  background-color: #DFD0B8;
+  border-radius: 12px;
+  box-shadow: 3px 4px 10px;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.kontak-c {
+  display: flex;
+  justify-content: center;
+}
+.kontak {
+  display: grid;
+  place-items: center;
+}
+.kontak button {
+  width: 200px;
+  height: 40px;
+  background-color: #222831;
+  color: #DFD0B8;
+  border: none;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.kontak button:hover {
+  transform: scale(1.05);
+  background-color: #36404f;
+}
+.kontak a {
+  display: inline-block;
+  margin: 10px;
+}
+footer {
+  background-color: #222831;  
+  color: #DFD0B8;
+  display: grid;
+  place-items: center;
+  height: 40px;
+}
+@media (max-width: 768px) {
+  .container {flex-direction: column;}
+  .d-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  #menu-c {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .menu {width: 250px;}
+  .kontak-c {flex-direction: column;}
+  .kontak button {
+    width: 200px;
+    max-width: 300px;
+  }
+  .menu img {width: 248px;}
+  .menu button {
+    width: 80%;
+    height: 35px;
+    font-size: 18px;
+  }
+}
