@@ -195,8 +195,8 @@ aside img:hover {transform: scale(0.7);}
   place-items: center;
 }
 .kontak button {
-  width: 200px;
-  height: 40px;
+  width: 60px;
+  height: 60px; 
   background-color: #222831;
   color: #DFD0B8;
   border: none;
@@ -204,6 +204,9 @@ aside img:hover {transform: scale(0.7);}
   border-radius: 12px;
   cursor: pointer;
   transition: transform 0.3s ease;
+}
+.kontak button i {
+  font-size: 35px;
 }
 .kontak button:hover {
   transform: scale(1.05);
