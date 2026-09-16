@@ -136,16 +136,13 @@ main {
   height: 55px;
   background-color: #222831;
   color: #DFD0B8;
-  padding: 4px 10px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   font-size: 12px;  
   font-weight: bold;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
-  z-index: 2;
 }
 aside {
   flex: 1;
